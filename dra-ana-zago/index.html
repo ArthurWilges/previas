@@ -1,234 +1,67 @@
 <!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Prévia de site para Dra. Ana Luiza Zago.">
+<meta name="robots" content="noindex"><meta name="description" content="Prévia de site para Dra. Ana Luiza Zago.">
 <meta property="og:title" content="Dra. Ana Luiza Zago | prévia do site"><meta property="og:description" content="Odontopediatria com afeto e tranquilidade">
 <title>Dra. Ana Luiza Zago | Prévia do site</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-    :root{--ink:#3946a0;--deep:#3946a0;--leaf:#3946a0;--mint:#ffc857;--cream:#fffdf2;--paper:#ffffff;--coral:#ffc857;--line:#3946a026;--shadow:0 24px 70px #3946a024;}
+:root{--ink:#3946a0;--acc:#ffc857;--paper:#fffdf2;--btxt:#3946a0;--h:"Baloo 2",serif;--b:"Nunito",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.55}
+a{color:inherit;text-decoration:none}img{max-width:100%}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+.pv{font:500 12px/1 var(--b);text-align:center;padding:9px 12px;background:var(--ink);color:#fff;opacity:.92;letter-spacing:.02em}
+.float{position:fixed;right:18px;bottom:18px;z-index:50;display:flex;align-items:center;gap:8px;background:#25d366;color:#fff;font-weight:600;padding:13px 18px;border-radius:999px;box-shadow:0 10px 30px #0003}
+iframe{border:0;width:100%;height:100%;min-height:340px;display:block}
+.note{font-size:12px;opacity:.6;margin-top:18px}
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      color: var(--ink);
-      background: var(--cream);
-      font-family: "Plus Jakarta Sans", sans-serif;
-      overflow-x: hidden;
-    }
+body{background:var(--paper)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{display:flex;align-items:center;gap:10px;font:700 20px var(--h)}
+.logo i{width:42px;height:42px;border-radius:50%;background:var(--acc);display:grid;place-items:center;font-style:normal;color:var(--ink)}
+.pill{background:var(--ink);color:#fff;padding:11px 20px;border-radius:999px;font-weight:700;font-size:14px}
+.hero{position:relative;text-align:center;padding:60px 0 90px;overflow:hidden}
+.blob{position:absolute;border-radius:50%;opacity:.55;z-index:0}
+.b1{width:260px;height:260px;background:var(--acc);left:-80px;top:40px}.b2{width:180px;height:180px;background:#8fd3c7;right:-40px;top:10px}.b3{width:120px;height:120px;background:#ff9fb2;right:12%;bottom:20px}
+.hero>*:not(.blob){position:relative;z-index:1}
+.tag{display:inline-block;background:#fff;padding:8px 16px;border-radius:999px;font-weight:700;font-size:14px;box-shadow:0 6px 0 color-mix(in srgb,var(--ink) 15%,transparent)}
+h1{font:800 clamp(38px,6.4vw,76px)/1.18 var(--h);margin:24px auto 18px;max-width:900px}
+h1 span{background:var(--acc);padding:0 .18em;border-radius:.3em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.lead{font-size:19px;max-width:620px;margin:0 auto;opacity:.8}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;font-weight:800;padding:17px 28px;border-radius:999px;margin-top:30px;box-shadow:0 6px 0 color-mix(in srgb,var(--ink) 55%,#000)}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 color-mix(in srgb,var(--ink) 55%,#000)}
+.stars{margin-top:22px;font-weight:700}.stars b{color:#f5a623;letter-spacing:2px}
+section{padding:70px 0}
+h2{font:800 clamp(30px,4vw,46px)/1.1 var(--h);text-align:center;margin-bottom:12px}
+.sub{text-align:center;opacity:.75;margin-bottom:40px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cd{border-radius:30px;padding:30px;text-align:left}
+.cd:nth-child(1){background:color-mix(in srgb,var(--acc) 45%,#fff)}.cd:nth-child(2){background:#d4f1ec}.cd:nth-child(3){background:#ffe0e6}
+.cd .ic{width:56px;height:56px;border-radius:18px;background:#fff;display:grid;place-items:center;margin-bottom:18px}.cd .ic svg{width:28px}
+.cd .n{display:none}.cd h3{font:800 22px var(--h);margin-bottom:6px}.cd p{opacity:.8}
+.pais{background:var(--ink);color:#fff;border-radius:40px;padding:50px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.pais h2{text-align:left;color:#fff}.pais ul{list-style:none;display:grid;gap:14px}
+.pais li{background:#ffffff14;border-radius:18px;padding:16px 18px;display:flex;gap:12px;align-items:start}.pais li b{color:var(--acc);font-size:20px;line-height:1}
+.loc{display:grid;grid-template-columns:1fr 1.2fr;gap:20px}
+.li{background:#fff;border-radius:30px;padding:34px;border:3px solid var(--ink)}
+.li h2{text-align:left;font-size:32px}.li p{margin:10px 0}
+.mp{border-radius:30px;overflow:hidden;border:3px solid var(--ink)}
+footer{text-align:center;padding:30px 0 96px;font-size:14px;opacity:.75}
+@media(max-width:860px){.cards,.pais,.loc{grid-template-columns:1fr}.pais{padding:30px;border-radius:28px}}
 
-    a { color: inherit; text-decoration: none; }
-    button, a { -webkit-tap-highlight-color: transparent; }
-
-    .grain {
-      position: fixed; inset: 0; z-index: 20; pointer-events: none; opacity: .035;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.92' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.72'/%3E%3C/svg%3E");
-    }
-
-    .shell { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
-
-    .topbar {
-      min-height: 38px; display: grid; place-items: center; padding: 8px 20px;
-      background: var(--deep); color: #ffffffdd; font-size: 12px; letter-spacing: .1em;
-      text-transform: uppercase; text-align: center;
-    }
-
-    nav {
-      position: absolute; top: 38px; left: 0; right: 0; z-index: 10;
-      display: flex; align-items: center; justify-content: space-between;
-      padding-block: 24px;
-    }
-
-    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: -.03em; }
-    .brand-mark {
-      width: 40px; height: 40px; display: grid; place-items: center; border-radius: 50%;
-      background: var(--deep); color: white; box-shadow: 0 10px 24px rgba(0,0,0,.18);
-    }
-    .brand small { display: block; color: var(--leaf); font-size: 10px; letter-spacing: .18em; text-transform: uppercase; }
-
-    .navlinks { display: flex; align-items: center; gap: 28px; font-size: 14px; font-weight: 600; }
-    .navlinks a:not(.btn):hover { color: var(--leaf); }
-
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-      min-height: 50px; padding: 0 22px; border-radius: 999px; border: 1px solid transparent;
-      background: var(--deep); color: white; font-weight: 700; transition: .25s ease;
-      box-shadow: 0 12px 28px rgba(0,0,0,.2);
-    }
-    .btn:hover { transform: translateY(-3px); box-shadow: 0 18px 34px rgba(0,0,0,.26); }
-    .btn.coral { background: var(--coral); box-shadow: 0 12px 28px rgba(0,0,0,.26); }
-    .btn.ghost { color: var(--deep); background: transparent; border-color: var(--line); box-shadow: none; }
-
-    .hero {
-      position: relative; min-height: 790px; display: flex; align-items: center;
-      background:
-        radial-gradient(circle at 78% 20%, rgba(114,213,181,.42), transparent 28%),
-        radial-gradient(circle at 25% 70%, rgba(255,255,255,.85), transparent 34%),
-        var(--cream);
-      overflow: hidden;
-    }
-    .hero::after {
-      content: ""; position: absolute; right: -10vw; bottom: -18vw; width: 58vw; height: 58vw;
-      border: 1px solid rgba(0,0,0,.1); border-radius: 50%; box-shadow: inset 0 0 0 70px rgba(255,255,255,.18);
-    }
-    .hero-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.06fr .94fr; align-items: center; gap: 72px; padding-top: 110px; }
-    .eyebrow { display: flex; align-items: center; gap: 12px; color: var(--leaf); font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
-    .eyebrow::before { content: ""; width: 42px; height: 2px; background: var(--coral); }
-    h1, h2, h3 { font-family: "Libre Caslon Text", serif; font-weight: 600; letter-spacing: -.045em; margin: 0; }
-    h1 { max-width: 720px; margin-top: 22px; font-size: clamp(56px, 6.4vw, 96px); line-height: .93; }
-    h1 em { color: var(--leaf); font-style: italic; font-weight: 500; }
-    .hero-copy > p { max-width: 590px; margin: 28px 0; font-size: 19px; line-height: 1.65; color: rgba(30,30,30,.74); }
-    .actions { display: flex; gap: 14px; flex-wrap: wrap; }
-    .microproof { margin-top: 28px; display: flex; align-items: center; gap: 14px; color: rgba(30,30,30,.7); font-size: 13px; }
-    .faces { display: flex; }
-    .face { width: 32px; height: 32px; margin-left: -7px; border: 2px solid var(--cream); border-radius: 50%; background: var(--mint); display: grid; place-items: center; font-weight: 700; font-size: 11px; }
-    .face:first-child { margin-left: 0; }
-
-    .visual { position: relative; min-height: 530px; }
-    .arch {
-      position: absolute; inset: 0 25px 0 60px; overflow: hidden; border-radius: 220px 220px 28px 28px;
-      background: linear-gradient(155deg, #fffdf2 0%, #ffc857 52%, #3946a0 120%); box-shadow: var(--shadow);
-    }
-    .arch::before {
-      content: ""; position: absolute; inset: 35px; border: 1px solid rgba(255,255,255,.55); border-radius: inherit;
-    }
-    .tooth {
-      position: absolute; width: 245px; height: 280px; left: 50%; top: 48%; transform: translate(-50%,-50%) rotate(-6deg);
-      filter: drop-shadow(0 26px 30px rgba(0,0,0,.2)); animation: float 5s ease-in-out infinite;
-    }
-    @keyframes float { 50% { transform: translate(-50%,-55%) rotate(2deg); } }
-    .orbit { position: absolute; width: 390px; height: 390px; left: 50%; top: 50%; transform: translate(-50%,-50%); border: 1px dashed rgba(255,255,255,.65); border-radius: 50%; }
-    .spark { position: absolute; width: 13px; height: 13px; background: var(--coral); border-radius: 50%; box-shadow: 0 0 0 8px rgba(0,0,0,.18); }
-    .spark.one { top: 22%; right: 10%; }
-    .spark.two { bottom: 16%; left: 8%; width: 8px; height: 8px; }
-    .float-card {
-      position: absolute; z-index: 3; right: -8px; bottom: 45px; width: 230px; padding: 20px;
-      border: 1px solid rgba(255,255,255,.7); border-radius: 20px; background: rgba(255,253,247,.88);
-      backdrop-filter: blur(14px); box-shadow: 0 20px 45px rgba(0,0,0,.15);
-    }
-    .float-card strong { display: block; font-family: "Libre Caslon Text", serif; font-size: 24px; }
-    .float-card span { font-size: 12px; color: rgba(30,30,30,.66); }
-
-    .ticker { overflow: hidden; background: var(--coral); color: #3946a0; border-block: 1px solid rgba(63,27,20,.15); }
-    .ticker-track { width: max-content; display: flex; gap: 44px; padding: 16px 0; animation: marquee 25s linear infinite; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .16em; }
-    .ticker-track span::before { content: "✦"; margin-right: 44px; color: white; }
-    @keyframes marquee { to { transform: translateX(-50%); } }
-
-    section { padding: 110px 0; }
-    .section-head { display: grid; grid-template-columns: .8fr 1.2fr; gap: 40px; align-items: end; margin-bottom: 56px; }
-    .section-head h2 { max-width: 720px; font-size: clamp(42px, 5vw, 70px); line-height: 1; }
-    .section-head p { max-width: 560px; color: rgba(30,30,30,.7); line-height: 1.7; }
-
-    .services { background: var(--paper); }
-    .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-    .service {
-      min-height: 330px; display: flex; flex-direction: column; justify-content: space-between; padding: 28px;
-      border: 1px solid var(--line); border-radius: 26px; background: var(--cream); transition: .3s ease;
-    }
-    .service:hover { transform: translateY(-8px); background: #fffdf2; box-shadow: 0 20px 44px rgba(0,0,0,.1); }
-    .service-number { font-family: "Libre Caslon Text", serif; font-size: 58px; color: var(--mint); }
-    .service h3 { font-size: 31px; margin-bottom: 12px; }
-    .service p { margin: 0; color: rgba(30,30,30,.68); line-height: 1.6; }
-    .service a { margin-top: 24px; font-size: 13px; font-weight: 700; color: var(--leaf); }
-
-    .promise { position: relative; background: var(--deep); color: white; overflow: hidden; }
-    .promise::before { content: "SORRISO"; position: absolute; right: -20px; top: 0; color: rgba(255,255,255,.035); font-family: "Libre Caslon Text", serif; font-size: 16vw; line-height: .8; }
-    .promise-grid { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 84px; align-items: center; }
-    .promise h2 { font-size: clamp(46px, 5vw, 76px); line-height: 1; }
-    .promise h2 em { color: var(--mint); font-style: italic; }
-    .promise p { color: rgba(255,255,255,.72); font-size: 18px; line-height: 1.7; }
-    .checks { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 28px; }
-    .check { padding: 16px; border: 1px solid rgba(255,255,255,.16); border-radius: 16px; background: rgba(255,255,255,.06); }
-
-    .testimonial { padding: 40px; border-radius: 30px; background: var(--cream); color: var(--ink); box-shadow: 0 30px 70px rgba(0,0,0,.22); transform: rotate(2deg); }
-    .stars { color: var(--coral); letter-spacing: .15em; }
-    .testimonial blockquote { margin: 20px 0; font-family: "Libre Caslon Text", serif; font-size: 32px; line-height: 1.25; }
-    .testimonial small { color: rgba(30,30,30,.62); }
-
-    .visit-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 18px; }
-    .visit-card, .map { min-height: 430px; border-radius: 28px; overflow: hidden; }
-    .visit-card { padding: 44px; color: white; background: var(--leaf); display: flex; flex-direction: column; justify-content: space-between; }
-    .visit-card h2 { font-size: 56px; line-height: 1; }
-    .detail { display: flex; gap: 14px; padding-block: 15px; border-top: 1px solid rgba(255,255,255,.2); }
-    .map { position: relative; background: #fffdf2; }
-    .map::before {
-      content: ""; position: absolute; inset: 0; opacity: .7;
-      background-image: linear-gradient(30deg, transparent 48%, rgba(0,0,0,.16) 49%, rgba(0,0,0,.16) 51%, transparent 52%), linear-gradient(-35deg, transparent 48%, rgba(0,0,0,.12) 49%, rgba(0,0,0,.12) 51%, transparent 52%);
-      background-size: 95px 70px, 130px 110px;
-    }
-    .pin { position: absolute; left: 52%; top: 46%; transform: translate(-50%,-50%); width: 88px; height: 88px; display: grid; place-items: center; border-radius: 50% 50% 50% 10%; rotate: -45deg; background: var(--coral); box-shadow: 0 20px 30px rgba(0,0,0,.25); }
-    .pin span { rotate: 45deg; color: white; font-weight: 700; font-size: 12px; }
-
-    .cta { text-align: center; }
-    .cta-inner { padding: 80px 24px; border-radius: 34px; background: var(--mint); position: relative; overflow: hidden; }
-    .cta-inner::before, .cta-inner::after { content: ""; position: absolute; width: 240px; height: 240px; border: 1px solid rgba(0,0,0,.18); border-radius: 50%; }
-    .cta-inner::before { left: -90px; top: -100px; } .cta-inner::after { right: -100px; bottom: -120px; }
-    .cta h2 { position: relative; font-size: clamp(44px, 6vw, 78px); line-height: 1; }
-    .cta p { position: relative; max-width: 620px; margin: 20px auto 30px; font-size: 18px; }
-
-    footer { padding: 40px 0 28px; }
-    .footer-row { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 13px; color: rgba(30,30,30,.6); }
-    .preview-note { margin-top: 20px; padding: 14px; border: 1px dashed var(--line); border-radius: 12px; text-align: center; font-size: 11px; color: rgba(30,30,30,.55); }
-
-    .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
-    .reveal.visible { opacity: 1; transform: none; }
-
-    @media (max-width: 900px) {
-      .navlinks a:not(.btn) { display: none; }
-      .hero { min-height: auto; }
-      .hero-grid, .promise-grid, .visit-grid { grid-template-columns: 1fr; }
-      .hero-grid { padding: 165px 0 70px; gap: 40px; }
-      .visual { min-height: 480px; }
-      .section-head { grid-template-columns: 1fr; }
-      .service-grid { grid-template-columns: 1fr; }
-      .service { min-height: 250px; }
-    }
-
-    @media (max-width: 560px) {
-      .shell { width: min(100% - 24px, 1180px); }
-      .brand span { font-size: 14px; }
-      nav .btn { min-height: 42px; padding: 0 14px; font-size: 12px; }
-      h1 { font-size: 54px; }
-      .hero-copy > p { font-size: 16px; }
-      .visual { min-height: 410px; }
-      .arch { inset: 0 10px 0 20px; }
-      .tooth { width: 195px; }
-      .orbit { width: 310px; height: 310px; }
-      .float-card { right: 0; width: 195px; }
-      section { padding: 78px 0; }
-      .checks { grid-template-columns: 1fr; }
-      .testimonial { padding: 28px; }
-      .testimonial blockquote { font-size: 26px; }
-      .visit-card { padding: 30px; }
-      .visit-card h2 { font-size: 44px; }
-      .footer-row { align-items: flex-start; flex-direction: column; }
-    }
-  
-.btn.coral{color:#3946a0}.brand-logo{width:44px;height:44px;border-radius:50%;object-fit:cover}.cta-inner{color:#3946a0}.ticker{color:#3946a0}</style></head><body>
-<div class="grain"></div><div class="topbar">Prévia do site • conteúdo sujeito à aprovação da clínica</div>
-<header class="hero" id="inicio"><nav class="shell"><a class="brand" href="#inicio"><span class="brand-mark">AL</span><span>Dra. Ana Luiza Zago <small>Curitiba</small></span></a>
-<div class="navlinks"><a href="#tratamentos">Tratamentos</a><a href="#diferenciais">Diferenciais</a><a href="#localizacao">Localização</a><a class="btn" href="https://wa.me/5541998386277" target="_blank" rel="noopener">Agendar ↗</a></div></nav>
-<div class="hero-grid shell"><div class="hero-copy reveal"><div class="eyebrow">Odontopediatria em Curitiba</div><h1>Odontopediatria com afeto e <em>tranquilidade.</em></h1>
-<p>Atendimento próximo, explicação clara e um plano pensado para você. Agende sua avaliação direto pelo WhatsApp.</p>
-<div class="actions"><a class="btn coral" href="https://wa.me/5541998386277" target="_blank" rel="noopener">Quero agendar minha avaliação</a><a class="btn ghost" href="#tratamentos">Ver tratamentos ↓</a></div>
-<div class="microproof"><div class="faces"><span class="face">★</span><span class="face">★</span><span class="face">★</span></div><span>Carinho e competência no atendimento infantil</span></div></div>
-<div class="visual reveal" aria-hidden="true"><div class="arch"><div class="orbit"></div><span class="spark one"></span><span class="spark two"></span>
-<svg class="tooth" viewBox="0 0 240 280" fill="none"><path d="M120 23C89 3 39 14 24 55 8 99 34 131 45 174c9 37 5 81 28 83 26 3 23-80 47-80s21 83 47 80c23-2 19-46 28-83 11-43 37-75 21-119-15-41-65-52-96-32Z" fill="#fffdf7"/><path d="M75 59c21 16 69 16 90 0" stroke="#ffc857" stroke-width="8" stroke-linecap="round" opacity=".8"/></svg></div>
-<div class="float-card"><strong>★ 5,0 no Google</strong><span>20 avaliações de pacientes reais.</span></div></div></div></header>
-<div class="ticker"><div class="ticker-track"><span>Odontopediatria</span><span>Prevenção infantil</span><span>Orientação aos pais</span><span>Odontopediatria</span><span>Prevenção infantil</span><span>Orientação aos pais</span><span>Atendimento humanizado</span><span>Atendimento humanizado</span></div></div>
-<main><section class="services" id="tratamentos"><div class="shell"><div class="section-head reveal"><div><div class="eyebrow">Tratamentos</div></div><h2>Cuidado completo para o seu sorriso.</h2></div><div class="service-grid"><article class="service reveal"><span class="service-number">01</span><div><h3>Odontopediatria</h3><p>Atendimento pensado para a criança se sentir segura na cadeira.</p><a href="https://wa.me/5541998386277" target="_blank" rel="noopener">Falar no WhatsApp →</a></div></article><article class="service reveal"><span class="service-number">02</span><div><h3>Prevenção infantil</h3><p>Consultas de rotina para cuidar dos dentes desde cedo.</p><a href="https://wa.me/5541998386277" target="_blank" rel="noopener">Falar no WhatsApp →</a></div></article><article class="service reveal"><span class="service-number">03</span><div><h3>Orientação aos pais</h3><p>Dicas práticas de escovação e alimentação para o dia a dia.</p><a href="https://wa.me/5541998386277" target="_blank" rel="noopener">Falar no WhatsApp →</a></div></article></div></div></section>
-<section class="promise" id="diferenciais"><div class="shell promise-grid"><div class="reveal"><div class="eyebrow" style="color:var(--mint)">Por que escolher</div><h2>Você entende o tratamento antes de <em>começar.</em></h2><p>Na avaliação, a equipe ouve sua história, tira suas dúvidas e mostra as opções para o seu caso, sem pressa.</p><div class="checks"><div class="check">✓ Plano individual</div><div class="check">✓ Explicação clara</div><div class="check">✓ Agendamento fácil</div><div class="check">✓ Acompanhamento próximo</div></div></div>
-<aside class="testimonial reveal"><div class="stars">★★★★★</div><blockquote>Espaço para o depoimento de um paciente de verdade.</blockquote><small>Aqui entram as avaliações do Google, escolhidas pela clínica.</small></aside></div></section>
-<section id="localizacao"><div class="shell visit-grid"><div class="visit-card reveal"><div><div class="eyebrow" style="color:#fff">Venha conhecer</div><h2>Dra. Ana Luiza Zago</h2></div><div><div class="detail"><span>⌖</span><span>R. Mal. Deodoro, 857 · sala 1905<br>Curitiba/PR</span></div><div class="detail"><span>◷</span><span>Horários pelo WhatsApp</span></div><div class="detail"><span>◉</span><span>(41) 99838-6277</span></div></div></div>
-<div class="map reveal"><iframe title="Mapa" src="https://maps.google.com/maps?q=Dra.+Ana+Luiza+Zago+R.+Mal.+Deodoro,+857+·+sala+1905+Curitiba&output=embed" style="border:0;width:100%;height:100%;min-height:430px" loading="lazy"></iframe></div></div></section>
-<section class="cta"><div class="shell"><div class="cta-inner reveal"><h2>Seu sorriso merece esse cuidado.</h2><p>Chama no WhatsApp, conta o que você precisa e agenda sua avaliação.</p><a class="btn" href="https://wa.me/5541998386277" target="_blank" rel="noopener">Conversar pelo WhatsApp ↗</a></div></div></section></main>
-<footer><div class="shell"><div class="footer-row"><a class="brand" href="#inicio"><span class="brand-mark">AL</span><span>Dra. Ana Luiza Zago <small>Curitiba</small></span></a><span>Odontopediatria em Curitiba</span></div><div class="preview-note">Prévia comercial. Textos, tratamentos e fotos são ilustrativos e devem ser aprovados pela clínica antes de ir ao ar.</div></div></footer>
-<script>
-    const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
-      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
-    }), { threshold: .12 });
-    document.querySelectorAll('.reveal').forEach((el, index) => {
-      el.style.transitionDelay = `${Math.min(index % 3, 2) * 90}ms`;
-      observer.observe(el);
-    });
-  </script></body></html>
+</style></head><body>
+<div class="pv">Prévia do site · conteúdo sujeito à aprovação da clínica</div>
+<div class="wrap"><nav><a class="logo" href="#"><i>☺</i>Dra. Ana Luiza Zago</a><a class="pill" href="https://wa.me/5541998386277" target="_blank" rel="noopener">Agendar</a></nav></div>
+<header class="hero"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><div class="wrap">
+<span class="tag">Odontopediatria em Curitiba</span>
+<h1>Dentista de criança com <span>afeto e tranquilidade</span></h1>
+<p class="lead">Um consultório pensado para a criança se sentir segura e para os pais saírem com todas as dúvidas respondidas.</p>
+<a class="btn" href="https://wa.me/5541998386277" target="_blank" rel="noopener">Agendar a primeira consulta</a><p class='stars'><b>★★★★★</b> 5,0 no Google · 20 avaliações</p></div></header>
+<section id="servicos"><div class="wrap"><h2>Como a gente cuida</h2><p class="sub">Do primeiro dentinho à adolescência.</p><div class="cards"><article class="cd"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div><span class="n">01</span><h3>Primeira consulta</h3><p>Um primeiro contato tranquilo, para a criança conhecer o consultório sem medo.</p></article><article class="cd"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div><span class="n">02</span><h3>Prevenção infantil</h3><p>Consultas de rotina para cuidar dos dentes desde cedo.</p></article><article class="cd"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4c-2-1.3-5.3-.6-6.3 2.1-1 2.9.7 5 1.4 7.8.6 2.4.3 5.3 1.8 5.4 1.7.2 1.5-5.2 3.1-5.2s1.4 5.4 3.1 5.2c1.5-.1 1.2-3 1.8-5.4.7-2.8 2.4-4.9 1.4-7.8C17.3 3.4 14 2.7 12 4Z"/></svg></div><span class="n">03</span><h3>Orientação aos pais</h3><p>Dicas práticas de escovação e alimentação para o dia a dia.</p></article></div></div></section>
+<section><div class="wrap"><div class="pais"><div><h2>Para os pais</h2><p style="opacity:.8">Carinho e competência no atendimento infantil.</p></div>
+<ul><li><b>✓</b>Consulta sem pressa, no tempo da criança</li><li><b>✓</b>Explicação clara para a família em cada etapa</li><li><b>✓</b>Orientação de escovação e alimentação para casa</li></ul></div></div></section>
+<section id="onde"><div class="wrap loc"><div class="li"><h2>Onde fica</h2><p>R. Mal. Deodoro, 857 · sala 1905<br>Curitiba/PR</p><p>(41) 99838-6277</p><a class="btn" href="https://wa.me/5541998386277" target="_blank" rel="noopener">Chamar no WhatsApp</a></div><div class="mp"><iframe title="Mapa" src="https://maps.google.com/maps?q=Dra.+Ana+Luiza+Zago+R.+Mal.+Deodoro,+857+·+sala+1905+Curitiba&output=embed" loading="lazy"></iframe></div></div></section>
+<footer><div class="wrap">Dra. Ana Luiza Zago · Odontopediatria<p class="note">Prévia comercial. Textos e imagens são ilustrativos e devem ser aprovados pela clínica antes de ir ao ar.</p></div></footer>
+<a class="float" href="https://wa.me/5541998386277" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg><span>Agendar</span></a>
+</body></html>
